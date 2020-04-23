@@ -8,8 +8,9 @@ def find_even_values(array_of_arrays)
     while element_index < array_of_arrays[row_index].count
       if array_of_arrays[row_index][element_index].even?
         p array_of_arrays[row_index][element_index]
+        element_index += 1
       end
-      element_index += 1
+      row_index += 1
     end
   end
 end
