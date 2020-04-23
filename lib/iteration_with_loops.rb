@@ -1,3 +1,4 @@
+require 'pry'
 def find_even_values(array_of_arrays)
   row_index = 0
   while row_index < array_of_arrays.count do
@@ -10,4 +11,5 @@ def find_even_values(array_of_arrays)
       row_index += 1
     end
   end
+  binding.pry
 end
